@@ -1,0 +1,6 @@
+rootProject.name = 'WifiControlExample'
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'
+
+include ':reactnativewificontrol'
+project(':reactnativewificontrol').projectDir = new File(rootProject.projectDir, '../../android')
